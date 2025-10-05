@@ -32,5 +32,14 @@ const mgr1 = new Manager("Thomas Jarvis", "Risk Management", 13);
 const mgr2 = new Manager("Laurie Strode", "Facility Management", 6);
 const mgr3 = new Manager("Nancy Thompson", "Information Technology", 7);
 
-console.log(emp1.describe());
-console.log(mgr1.describe());
+// console.log(emp1.describe());
+// console.log(mgr1.describe());
+
+//create class for company
+
+class Company {
+    constructor() {
+        this.employees = [];
+    }
+    
+}
