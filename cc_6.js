@@ -18,7 +18,7 @@ class Manager extends Employee {
         this.teamSize = teamSize;
     }
     describe() {
-        return `${this.name} manages a team of ${this.teamSize} people in ${this.department}`;
+        return `${this.name} manages a team of ${this.teamSize} people in ${this.department}.`;
     }
 }
 
@@ -41,5 +41,21 @@ class Company {
     constructor() {
         this.employees = [];
     }
-    
-}
+    addEmployee(employee) {
+        this.employees.push(employee); //employee includes employees and managers
+    }
+    listEmployees() {
+        for (const employee of this.employees) {
+            console.log(employee.describe());
+        }
+    }
+} 
+
+const company = new Company();
+company.addEmployee(emp1);
+company.addEmployee(emp1);
+company.addEmployee(emp1);
+company.addEmployee(emp1);
+company.addEmployee(emp1);
+company.addEmployee(emp1);
+
