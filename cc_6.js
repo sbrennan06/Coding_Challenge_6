@@ -51,11 +51,16 @@ class Company {
     }
 } 
 
+//instantiate company object
+
 const company = new Company();
 company.addEmployee(emp1);
-company.addEmployee(emp1);
-company.addEmployee(emp1);
-company.addEmployee(emp1);
-company.addEmployee(emp1);
-company.addEmployee(emp1);
+company.addEmployee(emp2);
+company.addEmployee(emp3);
+company.addEmployee(mgr1);
+company.addEmployee(mgr2);
+company.addEmployee(mgr3);
+
+company.listEmployees();
+
 
