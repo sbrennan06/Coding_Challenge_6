@@ -64,3 +64,4 @@ company.addEmployee(mgr3);
 company.listEmployees();
 
 
+// tested w/ no syntax errors and console.log appears correct
