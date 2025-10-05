@@ -11,6 +11,7 @@ class Employee {
     }
 }
 
+//create Manager subclass
 class Manager extends Employee {
     constructor(name, department, teamSize) {
         super(name, department); //super calls constructor from parent class
@@ -19,3 +20,15 @@ class Manager extends Employee {
         return `${this.name} manages a team of ${this.teamSize} people in ${this.department}`;
     }
 }
+
+//create samples of employees and managers
+
+const emp1 = new Employee("Jason Vorhees", "Risk Management");
+const emp2 = new Employee("Michael Myers", "Facility Management");
+const emp3 = new Employee("Frederick Krueger", "Information Technology");
+
+const mgr1 = new Manager("Thomas Jarvis", "Risk Management", 13);
+const mgr2 = new Manager("Laurie Strode", "Facility Management", 6);
+const mgr3 = new Manager("Nancy Thompson", "Information Technology", 7);
+
+
