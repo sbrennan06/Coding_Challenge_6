@@ -11,3 +11,9 @@ class Employee {
     `${this.name} works in ${this.department}.`; 
     }
 }
+
+class Manager extends Employee {
+    constructor(name, department, teamSize) {
+        super(name, department); //super calls constructor from parent class\
+    }
+}
